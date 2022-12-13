@@ -1,11 +1,15 @@
 // Instructions can be found in destructuring_arrays.md
 
 export function sequence(order) {
-  /*const first = order[0];
+ /* const first = order[0];
   const second = order[1];
-  const third = order[2];
+  const third = order[2];*/
 
-  return first + ",  " + second + ", " + third;*/
+  const [first, second, third] = order;
 
-  return order.join(", ");
+  const result = first + ", " + second + ", " + third;
+
+  console.log(result);
+
+  return result;
 }
